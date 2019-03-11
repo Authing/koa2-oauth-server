@@ -18,6 +18,8 @@ var UnauthorizedRequestError = require('oauth2-server/lib/errors/unauthorized-re
 function KoaOAuthServer(options) {
 	options = options || {};
 
+	this.options = options;
+
 	if (!options.model) {
 		throw new InvalidArgumentError('Missing parameter: `model`');
 	}
@@ -43,8 +45,8 @@ KoaOAuthServer.prototype.authenticate = function(options) {
 	var that = this;
 
 	return async function(ctx, next) {
-		var request = new Request(ctx.request);
-		var response = new Response(ctx.response);
+		var request = new Request(ctx.request, that.options.model);
+		var response = new Response(ctx.response, that.options.model);
 		var token;
 
 		try{
@@ -71,8 +73,8 @@ KoaOAuthServer.prototype.authorize = function(options) {
 	var that = this;
 
 	return async function(ctx, next){
-		var request = new Request(ctx.request);
-		var response = new Response(ctx.request);
+		var request = new Request(ctx.request, that.options.model);
+		var response = new Response(ctx.request, that.options.model);
 		var code;
 
 		try{
@@ -103,8 +105,8 @@ KoaOAuthServer.prototype.token = function(options) {
 	var that = this;
 
 	return async function(ctx, next){
-		var request = new Request(ctx.request);
-		var response = new Response(ctx.response);
+		var request = new Request(ctx.request, that.options.model);
+		var response = new Response(ctx.response, that.options.model);
 		var token;
 
 		try{
