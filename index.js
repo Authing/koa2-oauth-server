@@ -74,7 +74,7 @@ KoaOAuthServer.prototype.authorize = function(options) {
 
 	return async function(ctx, next){
 		var request = new Request(ctx.request, that.options.model);
-		var response = new Response(ctx.request, that.options.model);
+		var response = new Response(ctx.response, that.options.model);
 		var code;
 
 		try{
