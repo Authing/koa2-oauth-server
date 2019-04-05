@@ -1,52 +1,51 @@
 {
-	"name": "koa2-oauth-server",
-	"version": "2.0.0",
-	"description": "OAuth provider for Koa2 (fork from waychan23/koa2-oauth-server)",
-	"main": "index.js",
-	"scripts": {
-		"lint": "jshint .",
-		"test": "mocha --recursive test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/Authing/koa2-oauth-server"
-	},
-	"keywords": [
-		"koa",
-		"koa2",
-		"oauth",
-		"oauth2"
-	],
-	"author": {
-		"name": "Nuno Sousa",
-		"email": "nfs@seegno.com"
-	},
-	"contributors": [
-		{
-			"name": "Way Chan",
-			"email": "waychan23@hotmail.com"
-		},
-		{
-			"name": "xueping",
-			"email": "l1968108962@gmail.com"
-		}
-	],
-	"license": "SEE LICENSE IN LICENSE",
-	"dependencies": {
-		"bluebird": "^3.0.5",
-		"koa": "^2.3.0",
-		"node-oauth2-server": "^2.4.0",
-		"oauth2-server": "github:Authing/node-oauth2-server"
-	},
-	"devDependencies": {
-		"koa-bodyparser": "^4.2.0",
-		"jshint": "^2.8.0",
-		"mocha": "^2.3.3",
-		"should": "^7.1.0",
-		"sinon": "^1.14.1",
-		"supertest": "^0.15.0"
-	},
-	"engines": {
-		"node": ">=7"
-	}
+  "name": "@authing/koa2-oauth-server",
+  "version": "2.1.0",
+  "description": "OAuth provider for Koa2 (fork from waychan23/koa2-oauth-server)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint .",
+    "test": "mocha --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Authing/koa2-oauth-server.git"
+  },
+  "keywords": [
+    "koa",
+    "koa2",
+    "oauth",
+    "oauth2"
+  ],
+  "author": "Nuno Sousa <nfs@seegno.com>",
+  "contributors": [
+    "Way Chan <waychan23@hotmail.com>",
+    "xueping <l1968108962@gmail.com>"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "koa": "^2.3.0",
+    "node-oauth2-server": "^2.4.0",
+    "oauth2-server": "github:Authing/node-oauth2-server"
+  },
+  "devDependencies": {
+    "koa-bodyparser": "^4.2.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3",
+    "should": "^7.1.0",
+    "sinon": "^1.14.1",
+    "supertest": "^0.15.0"
+  },
+  "engines": {
+    "node": ">=7"
+  },
+  "bugs": {
+    "url": "https://github.com/Authing/koa2-oauth-server/issues"
+  },
+  "homepage": "https://github.com/Authing/koa2-oauth-server#readme",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  }
 }

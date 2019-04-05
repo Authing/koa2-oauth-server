@@ -8,7 +8,7 @@ This is the koa2 wrapper for [oauth2-server](https://github.com/oauthjs/node-oau
 
 ## Installation
 
-    $ npm install waychan23/koa2-oauth-server
+    $ npm install @authing/koa2-oauth-server
 
 ## Quick Start
 
