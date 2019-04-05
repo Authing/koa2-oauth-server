@@ -27,7 +27,7 @@
     "bluebird": "^3.0.5",
     "koa": "^2.3.0",
     "node-oauth2-server": "^2.4.0",
-    "oauth2-server": "github:Authing/node-oauth2-server"
+    "@authing/oauth2-server": "^3.1.0"
   },
   "devDependencies": {
     "koa-bodyparser": "^4.2.0",
