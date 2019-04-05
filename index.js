@@ -4,12 +4,12 @@
  * Module dependencies.
  */
 
-var InvalidArgumentError = require('oauth2-server/lib/errors/invalid-argument-error');
-var NodeOAuthServer = require('oauth2-server');
+var InvalidArgumentError = require('@authing/oauth2-server/lib/errors/invalid-argument-error');
+var NodeOAuthServer = require('@authing/oauth2-server');
 var Promise = require('bluebird');
-var Request = require('oauth2-server').Request;
-var Response = require('oauth2-server').Response;
-var UnauthorizedRequestError = require('oauth2-server/lib/errors/unauthorized-request-error');
+var Request = require('@authing/oauth2-server').Request;
+var Response = require('@authing/oauth2-server').Response;
+var UnauthorizedRequestError = require('@authing/oauth2-server/lib/errors/unauthorized-request-error');
 
 /**
  * Constructor.
